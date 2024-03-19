@@ -4,6 +4,7 @@
   "homepage": "https://jiyojollyk.github.io/AnalyticsProject/",
   "private": true,
   "dependencies": {
+    "@datadog/browser-logs": "^5.12.0",
     "@datadog/browser-rum": "^5.12.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

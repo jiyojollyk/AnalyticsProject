@@ -1,6 +1,10 @@
 import React from "react";
+import { datadogLogs } from "@datadog/browser-logs";
 
 const Home =()=>{
+    const handleClick=()=>{
+        datadogLogs.logger.info('Button Clicked', { button: 'myButton' });
+    }
     return (
         <>
         <div class="container">
@@ -27,7 +31,7 @@ const Home =()=>{
             <h4>Subscibe to our newsletter</h4>
             <form action="welcome.html" id="home-newsletter-form">
               <input type="email" required />
-              <button>Subscribe</button>
+              <button onClick={handleClick}>Subscribe</button>
             </form>
           </div>
         </div>
