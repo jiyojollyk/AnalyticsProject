@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import './styles.css';
 import { datadogRum } from '@datadog/browser-rum';
 import { datadogLogs } from "@datadog/browser-logs";
 import Home from './Home';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ProductDetail from './ProductDetail';
+import Success from './Success';
 
 datadogRum.init({
     applicationId: '1ccca677-9a7c-41ed-b968-7e1987b78697',
@@ -32,7 +33,13 @@ datadogLogs.init({
 function App() {
   return (
     <div className="App">
-        <Home />
+        <BrowserRouter>
+          <Routes>
+            <Route path='/AnalyticsProject' Component={Home} />
+            <Route path='/detail' Component={ProductDetail} />
+            <Route path='/thankyou' Component={Success} />
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }

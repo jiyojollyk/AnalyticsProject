@@ -50,3 +50,30 @@ h2,li{
     border-radius: 5px;
     color: #fff;
 }
+.product-cards-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 80%;
+  margin: 50px auto;
+}
+.product-card{
+  border: 1px solid gray;
+  padding: 20px;
+  text-align: left;
+}
+.product-card .add-to-cart{
+  display: block;
+  background-color: #3272E7;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.card-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
