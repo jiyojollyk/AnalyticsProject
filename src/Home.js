@@ -30,10 +30,10 @@ const Home =()=>{
           <a class="exp-btn" target="_blank" href="https://experionglobal.com/">Take me to experion</a>
           <div class="newsletter">
             <h4>Subscibe to our newsletter</h4>
-            <form action="welcome.html" id="home-newsletter-form">
+            <form id="home-newsletter-form">
               <input type="email" required />
-              <button onClick={handleClick}>Subscribe</button>
             </form>
+              <button onClick={handleClick}>Subscribe</button>
           </div>
         </div>
     </div>
