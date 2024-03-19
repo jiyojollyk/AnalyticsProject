@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import './styles.css';
 import { datadogRum } from '@datadog/browser-rum';
+import Home from './Home';
+
 
 datadogRum.init({
     applicationId: '1ccca677-9a7c-41ed-b968-7e1987b78697',
@@ -21,20 +24,7 @@ datadogRum.init({
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Home />
     </div>
   );
 }
