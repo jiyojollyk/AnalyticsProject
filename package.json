@@ -1,7 +1,7 @@
 {
   "name": "analyticsnew",
   "version": "0.1.0",
-  "homepage": "https://github.com/jiyojollyk/AnalyticsProject",
+  "homepage": "https://jiyojollyk.github.io/AnalyticsProject/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
