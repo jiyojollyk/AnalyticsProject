@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import './styles.css';
 import { datadogRum } from '@datadog/browser-rum';
+import { datadogLogs } from "@datadog/browser-logs";
 import Home from './Home';
 
 
@@ -19,6 +20,13 @@ datadogRum.init({
     trackResources: true,
     trackLongTasks: true,
     defaultPrivacyLevel: 'mask-user-input',
+});
+
+datadogLogs.init({
+  clientToken: 'pubdd1edba2a0d1adebfe127c42b280eb82',
+  site: 'us5.datadoghq.com',
+  forwardErrorsToLogs: true,
+  sessionSampleRate: 100
 });
 
 function App() {

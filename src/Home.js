@@ -1,17 +1,9 @@
 import React from "react";
 import { datadogLogs } from "@datadog/browser-logs";
 
-datadogLogs.init({
-    clientToken: 'pubdd1edba2a0d1adebfe127c42b280eb82',
-    site: 'us5.datadoghq.com',
-    forwardErrorsToLogs: true,
-    sessionSampleRate: 100
-});
-
 const Home =()=>{
     const handleClick=()=>{
-        console.log("ok");
-        datadogLogs.logger.info('Button Clicked', { button: 'myButton' });
+        datadogLogs.logger.info('Log from frontend', { button: 'myButton',id:'123455' });
     }
     return (
         <>
