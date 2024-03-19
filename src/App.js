@@ -36,8 +36,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/AnalyticsProject' Component={Home} />
-            <Route path='/detail' Component={ProductDetail} />
-            <Route path='/thankyou' Component={Success} />
+            <Route path='/AnalyticsProject/detail' Component={ProductDetail} />
+            <Route path='/AnalyticsProject/thankyou' Component={Success} />
           </Routes>
         </BrowserRouter>
     </div>
