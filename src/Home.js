@@ -3,6 +3,7 @@ import { datadogLogs } from "@datadog/browser-logs";
 
 const Home =()=>{
     const handleClick=()=>{
+        console.log("ok");
         datadogLogs.logger.info('Button Clicked', { button: 'myButton' });
     }
     return (
