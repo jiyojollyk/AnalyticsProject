@@ -35,9 +35,9 @@ function App() {
     <div className="App">
         <HashRouter>
           <Routes>
-            <Route path='/AnalyticsProject' Component={Home} />
-            <Route path='/AnalyticsProject/detail' Component={ProductDetail} />
-            <Route path='/AnalyticsProject/thankyou' Component={Success} />
+            <Route path='/' Component={Home} />
+            <Route path='/detail' Component={ProductDetail} />
+            <Route path='/thankyou' Component={Success} />
           </Routes>
         </HashRouter>
     </div>
