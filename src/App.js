@@ -25,8 +25,8 @@ datadogRum.init({
 });
 
 datadogRum.startView({
-  name: homepage,
-  service: analyticsproject,
+  name: 'homepage',
+  service: 'analyticsproject',
   version: '1.0.0'
 })
 
