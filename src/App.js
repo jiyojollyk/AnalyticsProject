@@ -20,8 +20,15 @@ datadogRum.init({
     trackUserInteractions: true,
     trackResources: true,
     trackLongTasks: true,
+    trackViewsManually: true,
     defaultPrivacyLevel: 'mask-user-input',
 });
+
+datadogRum.startView({
+  name: homepage,
+  service: analyticsproject,
+  version: '1.0.0'
+})
 
 datadogLogs.init({
   clientToken: 'pubdd1edba2a0d1adebfe127c42b280eb82',
