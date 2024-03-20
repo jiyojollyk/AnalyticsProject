@@ -36,8 +36,8 @@ function App() {
         <HashRouter>
           <Routes>
             <Route path='/' Component={Home} />
-            <Route path='/detail' Component={ProductDetail} />
-            <Route path='/thankyou' Component={Success} />
+            <Route path='detail' Component={ProductDetail} />
+            <Route path='thankyou' Component={Success} />
           </Routes>
         </HashRouter>
     </div>

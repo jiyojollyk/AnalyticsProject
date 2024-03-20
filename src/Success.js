@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Header from "./Header";
 
 const Success =(props)=>{
     const handleClick=()=>{
@@ -7,8 +8,9 @@ const Success =(props)=>{
     }
     return(
         <div>
+            <Header />
             <h4>Product added successfully!!!!</h4>
-            <Link to={'/AnalyticsProject'}>Home</Link>
+            <Link to={'/'}>Home</Link>
         </div>
     )
 }

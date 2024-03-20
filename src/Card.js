@@ -11,7 +11,7 @@ const Card =(props)=>{
             <p>{props.data.desc}</p>
             <div className="card-footer">
                 <h5>{props.data.price}</h5>
-                <Link className="add-to-cart" to='/detail' state={{data: props.data}}> View Details </Link>
+                <Link className="add-to-cart" to='detail' state={{data: props.data}}> View Details </Link>
             </div>
         </div>
     )
