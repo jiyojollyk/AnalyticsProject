@@ -3,7 +3,7 @@ import './styles.css';
 import { datadogRum } from '@datadog/browser-rum';
 import { datadogLogs } from "@datadog/browser-logs";
 import Home from './Home';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes, HashRouter } from 'react-router-dom';
 import ProductDetail from './ProductDetail';
 import Success from './Success';
 
@@ -33,13 +33,13 @@ datadogLogs.init({
 function App() {
   return (
     <div className="App">
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path='/AnalyticsProject' Component={Home} />
             <Route path='/AnalyticsProject/detail' Component={ProductDetail} />
             <Route path='/AnalyticsProject/thankyou' Component={Success} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </div>
   );
 }
