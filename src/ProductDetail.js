@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import { useLocation } from "react-router-dom";
 import { useDispatch,useSelector } from "react-redux";
+import { datadogLogs } from "@datadog/browser-logs";
 import { addToCart } from "./redux/reducer";
 
 const ProductDetail = () => {
@@ -10,7 +11,10 @@ const ProductDetail = () => {
     const dispatch = useDispatch();
 
     const addCart =()=>{
-        dispatch(addToCart(cartCount + 1))
+      dispatch(addToCart(cartCount + 1));
+      datadogLogs.logger.info(`${state.data.name} added to cart`, {
+        button: "myButton",
+      });
     }
   return (
     <div className="product-detail">
