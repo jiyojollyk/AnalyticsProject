@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AnalyticsProject/static/css/main.e1166cbc.css",
-    "main.js": "/AnalyticsProject/static/js/main.66b1d3f8.js",
+    "main.css": "/AnalyticsProject/static/css/main.c7a09d72.css",
+    "main.js": "/AnalyticsProject/static/js/main.05e9477b.js",
     "static/js/453.ece6b537.chunk.js": "/AnalyticsProject/static/js/453.ece6b537.chunk.js",
     "index.html": "/AnalyticsProject/index.html",
-    "main.e1166cbc.css.map": "/AnalyticsProject/static/css/main.e1166cbc.css.map",
-    "main.66b1d3f8.js.map": "/AnalyticsProject/static/js/main.66b1d3f8.js.map",
+    "main.c7a09d72.css.map": "/AnalyticsProject/static/css/main.c7a09d72.css.map",
+    "main.05e9477b.js.map": "/AnalyticsProject/static/js/main.05e9477b.js.map",
     "453.ece6b537.chunk.js.map": "/AnalyticsProject/static/js/453.ece6b537.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1166cbc.css",
-    "static/js/main.66b1d3f8.js"
+    "static/css/main.c7a09d72.css",
+    "static/js/main.05e9477b.js"
   ]
 }
