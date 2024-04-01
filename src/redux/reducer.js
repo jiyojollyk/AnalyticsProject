@@ -8,7 +8,6 @@ const cartSlice = createSlice({
   reducers: {
     addToCart: (state, action) => {
       state.cartCount = action.payload;
-      window.location.href = '#thankyou';
     },
   },
 });

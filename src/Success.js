@@ -10,7 +10,7 @@ const Success =(props)=>{
         <div>
             <Header />
             <h4>Product added successfully!!!!</h4>
-            <Link to={'/'}>Home</Link>
+            <Link to={'/cart'}>View Cart</Link>
         </div>
     )
 }

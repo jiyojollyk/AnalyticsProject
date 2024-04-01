@@ -50,6 +50,10 @@ h2,li{
     border-radius: 5px;
     color: #fff;
 }
+.product-cart-container{
+  max-width: 80%;
+  margin: 50px auto;
+}
 .product-cards-container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
